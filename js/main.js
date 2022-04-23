@@ -27,3 +27,9 @@ function getDrink(){
 function refreshPage(){
   window.location.reload();
 } 
+
+
+$(document).ready(function(){
+  $('.imagen[src=""]').hide();
+  $('.imagen:not([src=""])').show();
+});
