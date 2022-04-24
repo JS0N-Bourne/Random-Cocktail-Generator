@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
     	<meta charset="utf-8">
-    	<meta name="description" content="This is where your description goes">
+    	<meta name="description" content="random drink generator app">
     	<meta name="keywords" content="one, two, three">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,28 +18,22 @@
 	</head>
 	<body>
 
-<!-- ********************* MAIN SECTION ********************** -->
+<!-- ******************** HERO SECTION ********************* -->
 
-  <section class="mainSection">
-
-    <section id="logo">
-      <img src="images/cocktailLogo.png">
-    </section>
-  
-    <main>
+<section class="heroSection">
+    <section id="gameBoard">
       <img class="with-linear-gradient" src="images/cocktails.gif"/>
-    </main>
-
-    <section id="drinkPicture">
-      <img class="randomDrink" src="" alt="">
     </section>
+    <section id="featureDrink">
+      <img class="randomDrink" src=" " style="display: none" onload="this.style.display=''">
+    </section>
+</section>
 
-  </section>
+<!-- ********************* INFO SECTION ********************** -->
 
-<!-- ********************* DRINKS SECTION ********************** -->
+<section id="firstSection">
 
-    <section id="firstSection">
-
+    <section id="infoSection">
 
       <section id="drinkName">
         <h2>NO WHAMMYS, ONLY WINNERS!</h2>
@@ -48,7 +42,7 @@
         <section class="drinkIngredients">
           <span>INGREDIENTS</span>
           <ul>
-            <li class="ingredient1">A general list of everything you'll need to make any cocktail that pops up. So stock your shelves if you like to play hard.</li>
+            <li class="ingredient1">Here you'll find a detailed list of everything you'll need to make any cocktail that pops up. So stock your shelves if you like to play hard.</li>
             <li class="ingredient2"></li>
             <li class="ingredient3"></li>
             <li class="ingredient4"></li>
@@ -59,61 +53,56 @@
 
         <section id="drinkInstructions">
           <span>INSTRUCTIONS</span>
-          <p>If you're in the mood to try a new cocktail and you're being a little adventurous, let the random cocktail generator do it for you. While you'll likely not like every drink you get through this method, you might also find some that become your favorites which you may not have otherwise ever found. For those in search of specific drinks in addition to random cocktails, you've arrived exactly where you should be. We created a search option for those looking for a variety of random cocktails. Using this free online tool takes almost no effort at all. All that needs to be done is to start typing an ingredient, drink name or even a few beginning letters, then click the button. A refreshing assortment of cocktail drinks will instantly appear.</p>
+          <p>If you're in the mood to try a new cocktail and you're feeling a little adventurous, let The Random Cocktail Generator do it for you. Or maybe you're thirsty for something specific? Well, we've also created a search option for you. Just type in a drink name or even a few starting letters, and click the button. A refreshing assortment of cocktails will instantly appear.</p>
         </section>
 
     </section>
 
+</section>  
+
+
 <!-- ********************* BUTTONS SECTION ********************** -->
 
-    <!-- <section id="secondSection">
+<section id="buttonsSection">
 
-      <section id="topButtons">
-        <div>
-          <span class="button1" onClick="refreshPage()">RESET</span>
-        </div>
-        <div>
+  <section id="buttonsContainer">
+
+    <section class="smallGreenContainer">
+      <div id="smallGreenButton">
+        <span class="button1" onClick="refreshPage()">RESET</span>
+      </div>  
+      
+    </section>  
+
+    <section class="redContainer">
+      <div id="redButtonContainer">
+        <img id="redButton" src="images/redbutton.png"/>   
+      </div>
+    </section>  
+      
+      <section class="smallRedContainer">
+
+        <div id="smallRedButton">
         <button type="button" type="submit" name="button" class="button2">SEARCH</button>
         </div>
+
         <section id="searchInput">
           <input type="text" name="" value="">
-          <!-- <button type="button" name="button">Search by name</button> -->
-        <!-- </section>
-      </section>    
-        
-    </section> --> -->
+        </section>
 
+        <div id="music">
+          <audio controls="controls"><source src="audio/Press Your Luck.mp3" autostart="true" type="audio/mpeg" /></audio>
+        </div>
 
-<!-- ********************* FOURTH SECTION ********************** -->
+       </section>
 
+<!-- 
+       <section id="whammyPic">
+        <img class="whammy" src="images/whammy.png"/>
+      </section> -->
 
-    <section class="fourthSection">
-
-      <div id="smallgreenbutton">
-        <span class="button1" onClick="refreshPage()">RESET</span>
-      </div>
-
-      <div>
-        <img id="redButton" src="images/redbutton.png"/>
-      </div>
-
-      <div id="smallredbutton">
-        <button type="button" type="submit" name="button" class="button2">SEARCH</button>
-      </div>
-
-      <section id="searchInput">
-        <input type="text" name="" value="">
-          <!-- <button type="button" name="button">Search by name</button> -->
-      </section>
-
-    </section>
-
-<!-- ********************* LAST SECTION ********************** -->
-
-<section class="lastSection">
-  <section class="buttonHowTo">
-    <p>Hit the red button to search up a random cocktail, or search by name or ingredient if you already have a drink in mind.</p>
   </section>
+
 </section>
 
 		<script type="text/javascript" src="js/main.js"></script>
